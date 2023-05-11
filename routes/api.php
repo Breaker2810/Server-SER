@@ -22,6 +22,7 @@ use App\Models\Multimedia;
 //     return $request->user();
 // });
 
+//RUTAS
 
 // Usuarios
 Route::get('/usuarios', [UsuarioController::class, 'index']);
