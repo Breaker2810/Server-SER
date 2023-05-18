@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\MultimediaController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\NewsletterController;
 use App\Models\Multimedia;
 
 /*
@@ -45,4 +46,6 @@ Route::get('/recursos/{id}', [MultimediaController::class, 'show']);
 Route::put('/recursos/{id}', [MultimediaController::class, 'update']);
 Route::delete('/recursos/{id}', [MultimediaController::class, 'destroy']);
 
-
+// Newsletter
+Route::post('/resgister-newsletter',[NewsletterController::class, 'store']);
+Route::post('/show/newsletter',[NewsletterController::class, 'index']);
